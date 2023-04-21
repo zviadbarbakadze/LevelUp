@@ -15,6 +15,7 @@ export default function SimilarPromotions() {
           </ImageText>
           <Image src={hundreedImage} alt="" />
         </ImageContainer>
+
         <ImageContainer>
           <ImageBoldText>Win a Jackpot</ImageBoldText>
           <ImageText>
@@ -30,13 +31,16 @@ export default function SimilarPromotions() {
           <Image src={hundreedImage} alt="" />
         </ImageContainer>
         <ImageContainer>
-          <ImageBoldText>Win a Jackpot</ImageBoldText>
+          <ImageBoldText>Coming Soon</ImageBoldText>
           <ImageText>
             retrieve 300% bet amount as real money only here
           </ImageText>
           <Image src={MensImage} alt="" />
         </ImageContainer>
       </PromoContainer>
+      <PlayDiv>
+        <PlayButton>ითამაშე</PlayButton>
+      </PlayDiv>
     </Container>
   );
 }
@@ -67,6 +71,7 @@ const Image = styled.img`
   width: 100%;
   cursor: pointer;
 `;
+
 const ImageBoldText = styled.span`
   font-size: 14px;
   color: white;
@@ -87,4 +92,31 @@ const ImageText = styled.span`
   @media (max-width: 450px) {
     bottom: 35%;
   }
+`;
+const PlayDiv = styled.div`
+  width: 70%;
+  background-color: #171718;
+  border-top: 1px solid #f05a22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 15%;
+  @media (max-width: 1000px) {
+    width: 100%;
+    left: 0;
+  }
+`;
+const PlayButton = styled.button`
+  width: 144px;
+  height: 36px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  background-color: #f05a22;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 `;

@@ -12,6 +12,5 @@ function App() {
 export default App;
 const MyApp = styled.div`
   display: flex;
-  margin-top: 10px;
   justify-content: center;
 `;
