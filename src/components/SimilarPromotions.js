@@ -94,7 +94,7 @@ const ImageText = styled.span`
   }
 `;
 const PlayDiv = styled.div`
-  width: 70%;
+  width: 60%;
   background-color: #171718;
   border-top: 1px solid #f05a22;
   display: flex;
@@ -103,7 +103,7 @@ const PlayDiv = styled.div`
   padding: 10px;
   position: fixed;
   bottom: 0;
-  left: 15%;
+  left: 20%;
   @media (max-width: 1000px) {
     width: 100%;
     left: 0;

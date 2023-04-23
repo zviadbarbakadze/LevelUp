@@ -69,10 +69,10 @@ const HeaderInfo = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
-  width: 70%;
+  width: 60%;
   position: fixed;
   top: 0px;
-  left: 15%;
+  left: 20%;
   z-index: 1;
   background-color: ${(props) => props.backgroundColor};
   @media (max-width: 1000px) {
@@ -108,5 +108,8 @@ const Slots = styled.div`
   align-items: center;
   padding: 5px;
   margin-right: 10px;
+  color: white;
 `;
-const Times = styled.div``;
+const Times = styled.div`
+  color: white;
+`;
