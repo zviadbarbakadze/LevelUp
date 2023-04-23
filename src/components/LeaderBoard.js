@@ -54,7 +54,7 @@ const Leaderboard = styled.div`
   justify-content: space-between;
   height: 300px;
   padding: 10px;
-  width: 98%;
+  width: 100%;
   margin-bottom: 20px;
   overflow-y: scroll;
   &::-webkit-scrollbar {
@@ -110,7 +110,7 @@ const Text = styled.p`
     font-size: 10px;
   }
 `;
-const Icon = styled.img`
+export const Icon = styled.img`
   width: 20px;
   margin-right: 5px;
 `;

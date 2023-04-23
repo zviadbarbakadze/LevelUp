@@ -109,7 +109,7 @@ const PlayDiv = styled.div`
     left: 0;
   }
 `;
-const PlayButton = styled.button`
+export const PlayButton = styled.button`
   width: 144px;
   height: 36px;
   border-radius: 2px;

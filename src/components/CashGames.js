@@ -45,9 +45,9 @@ export default function CashGames() {
           <LeaderBoard />
           <Gifts />
           <Info>
-            <Text>
+            <InfoText>
               *ლიდერბორდის შედეგები განახლდება <MyLink>პოკერის ლობიში</MyLink>
-            </Text>
+            </InfoText>
           </Info>
         </LeaderBoardContainer>
       </Container>
@@ -60,8 +60,9 @@ const Container = styled.div`
   background-color: #2c3234;
   border-radius: 10px;
   position: relative;
+  padding: 0.5%;
 `;
-const Reick = styled.div`
+export const Reick = styled.div`
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: flex;
@@ -69,13 +70,14 @@ const Reick = styled.div`
   align-items: center;
   padding: 20px;
 `;
-const TextReick = styled.p`
+export const TextReick = styled.p`
   color: white;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 1px;
+  text-align: center;
 `;
-const Stick = styled.div`
+export const Stick = styled.div`
   background-color: #ef5a21;
   width: 30%;
   height: 4px;
@@ -85,13 +87,16 @@ const Stick = styled.div`
   top: 0;
   left: 35%;
 `;
-const LeaderBoardContainer = styled.div`
+export const LeaderBoardContainer = styled.div`
   background-color: #171718;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 5px;
+  padding: 1%;
+  margin-bottom: 10px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 `;
 const TextContainer = styled.div`
   display: flex;
@@ -104,17 +109,18 @@ const Text = styled.p`
   font-weight: bold;
   color: white;
   margin-right: 10px;
+  text-align: center;
   @media (max-width: 500px) {
     font-size: 10px;
   }
 `;
-const Icon = styled.img`
+export const Icon = styled.img`
   width: 20px;
   margin-right: 5px;
 `;
 
-const Header = styled.div`
-  width: 98%;
+export const Header = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   border-top-right-radius: 10px;
@@ -125,7 +131,7 @@ const Header = styled.div`
     justify-content: space-around;
   }
 `;
-const HeaderTitle = styled.span`
+export const HeaderTitle = styled.span`
   font-size: 14px;
   opacity: 80%;
   color: white;
@@ -137,12 +143,19 @@ const HeaderTitle = styled.span`
   }
 `;
 
-const Info = styled.div`
+export const Info = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 `;
-const MyLink = styled(Link)`
+export const MyLink = styled(Link)`
   color: #f05a22;
+`;
+export const InfoText = styled.p`
+  font-size: 15px;
+  color: white;
+  opacity: 80%;
+  text-align: center;
+  padding-bottom: 5px;
 `;

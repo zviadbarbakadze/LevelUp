@@ -27,7 +27,7 @@ const SectionGifts = styled.div`
   background-color: #25292b;
   padding: 10px;
   border-radius: 10px;
-  width: 98%;
+  width: 100%;
 `;
 const GiftItem = styled.div`
   background-color: #202324;
