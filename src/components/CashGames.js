@@ -55,9 +55,10 @@ export default function CashGames() {
     </>
   );
 }
-const Container = styled.div`
+export const Container = styled.div`
   margin: 30px;
-  background-color: #2c3234;
+  background-color: #1c1d1e;
+  border: 2px solid #2c3234;
   border-radius: 10px;
   position: relative;
   padding: 0.5%;
@@ -93,12 +94,12 @@ export const LeaderBoardContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
+  padding: 2%;
   margin-bottom: 10px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 `;
-const TextContainer = styled.div`
+export const TextContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

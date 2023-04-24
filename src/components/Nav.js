@@ -39,19 +39,19 @@ const MyNavLink = styled(NavLink)`
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
+  @media (max-width: 500px) {
+    font-size: 16px;
+    height: 60px;
+  }
 
   &.active {
     background-color: #ef5a21;
     height: 95px;
     border-radius: 10px;
     @media (max-width: 500px) {
-      font-size: 14px;
-      height: 45px;
+      font-size: 16px;
+      height: 65px;
     }
-  }
-  @media (max-width: 500px) {
-    font-size: 14px;
-    height: 40px;
   }
 `;
 const Times = styled.p`

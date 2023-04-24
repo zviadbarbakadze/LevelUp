@@ -62,6 +62,7 @@ const PromoContainer = styled.div`
   }
   @media (max-width: 450px) {
     grid-template-columns: auto;
+    justify-content: center;
   }
 `;
 const ImageContainer = styled.div`

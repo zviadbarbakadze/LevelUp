@@ -44,7 +44,7 @@ export default function LeaderBoard() {
     </Leaderboard>
   );
 }
-const Leaderboard = styled.div`
+export const Leaderboard = styled.div`
   background-color: #25292b;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -58,7 +58,7 @@ const Leaderboard = styled.div`
   margin-bottom: 20px;
   overflow-y: scroll;
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   &::-webkit-scrollbar-track {
     background-color: grey;
@@ -71,7 +71,7 @@ const Leaderboard = styled.div`
     background-color: #ef5a21;
   }
 `;
-const LeaderboardItem = styled.div`
+export const LeaderboardItem = styled.div`
   background-color: #1e2122;
   border-radius: 20px;
   display: flex;
@@ -81,7 +81,7 @@ const LeaderboardItem = styled.div`
   width: 100%;
   margin-bottom: 10px;
 `;
-const Numb = styled.div`
+export const Numb = styled.div`
   background-color: #2c3234;
   border-radius: 50%;
   width: 30px;

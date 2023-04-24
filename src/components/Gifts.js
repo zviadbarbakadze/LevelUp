@@ -29,7 +29,7 @@ const SectionGifts = styled.div`
   border-radius: 10px;
   width: 100%;
 `;
-const GiftItem = styled.div`
+export const GiftItem = styled.div`
   background-color: #202324;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -37,7 +37,7 @@ const GiftItem = styled.div`
   border-left-color: #ef5a21;
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 10px;
 `;
 const TravelIcon = styled.img`

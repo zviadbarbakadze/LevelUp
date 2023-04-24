@@ -73,7 +73,7 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const InfoCont = styled.div`
+export const InfoCont = styled.div`
   background-color: #2c3234;
   position: relative;
   text-align: center;
