@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import banner from "../assets/banner.jpg";
 import { useState, useEffect } from "react";
+import { BoldText, Text } from "./WidelyUsed";
+
 export default function Header() {
   const [backgroundColor, setBackgroundColor] = useState("");
 
@@ -49,22 +51,7 @@ const Image = styled.img`
 const TextContainer = styled.div`
   padding: 20px 30px;
 `;
-const BoldText = styled.p`
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 20px;
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
-const Text = styled.p`
-  font-size: 16px;
-  color: white;
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
-`;
+
 const HeaderInfo = styled.div`
   display: flex;
   justify-content: space-between;

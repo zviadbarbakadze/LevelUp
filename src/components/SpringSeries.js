@@ -3,17 +3,18 @@ import styled from "styled-components";
 import Tournaments from "./Tournaments";
 import LeaderBoard from "./LeaderBoard";
 import ticket from "../assets/ticket-icon-big.png";
+
 import {
+  Stick,
+  StickedCont,
+  BoldText,
   Header,
   HeaderTitle,
   Icon,
   InfoText,
   LeaderBoardContainer,
   MyLink,
-  Reick,
-  Stick,
-  TextReick,
-} from "./CashGames";
+} from "./WidelyUsed";
 import mechanic from "../assets/mechanic-icon.png";
 
 import Gifts from "./Gifts";
@@ -23,47 +24,58 @@ import SpinPokerInfo from "./SpinPokerInfo";
 export default function SpringSeries() {
   return (
     <>
-      <Container>
+      <MyContainer>
         <Tournaments />
-        <InfoCont>
-          <Stick></Stick>
-          <Reick>
-            <TextReick>მოხვდი ტოპ 20 ლიდერბორდში დაგროვებული ქულებით</TextReick>
-          </Reick>
-        </InfoCont>
-        <LeaderBoardContainer>
-          <PointsInfo>
-            <PointsText>ქულების დაგროვების მექანიკა</PointsText>
-            <MyIcon src={mechanic} alt="" />
-          </PointsInfo>
-          <Header>
-            <HeaderTitle>ადგილი</HeaderTitle>
-            <HeaderTitle>
-              <Icon src={ticket} alt="" />
-              ვაუჩერი
-            </HeaderTitle>
-            <HeaderTitle>პრიზი</HeaderTitle>
-          </Header>
+        <Container>
+          <InfoCont>
+            <Stick></Stick>
+            <StickedCont>
+              <BoldText>მოხვდი ტოპ 20 ლიდერბორდში დაგროვებული ქულებით</BoldText>
+            </StickedCont>
+          </InfoCont>
+          <LeaderBoardContainer>
+            <PointsInfo>
+              <PointsText>ქულების დაგროვების მექანიკა</PointsText>
+              <MyIcon src={mechanic} alt="" />
+            </PointsInfo>
+            <Header>
+              <HeaderTitle>ადგილი</HeaderTitle>
+              <HeaderTitle>
+                <Icon src={ticket} alt="" />
+                ვაუჩერი
+              </HeaderTitle>
+              <HeaderTitle>პრიზი</HeaderTitle>
+            </Header>
 
-          <LeaderBoard />
-          <Gifts />
-          <MyInfo>
-            <InfoText>
-              *ლიდერბორდის შედეგები განახლდება <MyLink>პოკერის ლობიში</MyLink>
-            </InfoText>
-            <InfoText>
-              *სატურნირო ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები
-              და სატელიტები
-            </InfoText>
-          </MyInfo>
-        </LeaderBoardContainer>
+            <LeaderBoard />
+            <Gifts />
+            <MyInfo>
+              <InfoText>
+                *ლიდერბორდის შედეგები განახლდება <MyLink>პოკერის ლობიში</MyLink>
+              </InfoText>
+              <InfoText>
+                *სატურნირო ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები
+                და სატელიტები
+              </InfoText>
+            </MyInfo>
+          </LeaderBoardContainer>
+        </Container>
         <TournamentSatelites />
-      </Container>
+      </MyContainer>
       <SpinPokerInfo />
     </>
   );
 }
 const Container = styled.div`
+  width: 100%;
+  background-color: #171718;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 30px 0;
+  border-radius: 20px;
+  border: 2px solid #25292b;
+`;
+const MyContainer = styled.div`
   margin: 30px;
   background-color: #1c1d1e;
   border-radius: 10px;
@@ -80,7 +92,6 @@ export const InfoCont = styled.div`
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  margin-top: 50px;
 `;
 const PointsInfo = styled.div`
   background-color: #25292b;

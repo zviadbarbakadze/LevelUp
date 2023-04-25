@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, LeaderBoardContainer } from "./CashGames";
+
+import { Container, LeaderBoardContainer } from "./WidelyUsed";
 import finalbanner from "../assets/final-info-img.jpg";
 import { GiftItem } from "./Gifts";
 import Categories from "./Categories";

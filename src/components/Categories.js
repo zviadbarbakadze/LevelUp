@@ -6,8 +6,8 @@ import CategoryCont, {
   ItemText,
   Text,
 } from "./CategoryCont";
-import { Stick } from "./CashGames";
 
+import { Stick } from "./WidelyUsed";
 import { Icon } from "./LeaderBoard";
 import ticket from "../assets/final-item-ticket-icon.png";
 import eventIcon from "../assets/final-item-event-icon.png";

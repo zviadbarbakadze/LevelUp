@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Reick, Stick, TextReick } from "./CashGames";
+
+import { Stick, StickedCont } from "./WidelyUsed";
 import clock from "../assets/mechanic-icon.png";
 import { PlayButton } from "./SimilarPromotions";
 import promoleft from "../assets/promo-left-img.png";
@@ -10,9 +11,9 @@ export default function Tournaments() {
   return (
     <Container>
       <Stick></Stick>
-      <Reick>
-        <TextReick>ტურნირები და სატელიტები</TextReick>
-      </Reick>
+      <StickedCont>
+        <BoldText>ტურნირები და სატელიტები</BoldText>
+      </StickedCont>
       <EventContainer>
         <BoldText>
           სერიის ფარგლებში, ყოველდღიურად გაიმართება სამი ივენთი:

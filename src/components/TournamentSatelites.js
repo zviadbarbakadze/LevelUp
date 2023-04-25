@@ -4,7 +4,8 @@ import { BoldText } from "./Tournaments";
 import tournament from "../assets/tournament-bg.png";
 import bottombg from "../assets/main-bg.png";
 import bottomsm from "../assets/main-bg-sm.png";
-import { InfoText } from "./CashGames";
+
+import { InfoText } from "./WidelyUsed";
 export default function TournamentSatelites() {
   return (
     <Container>

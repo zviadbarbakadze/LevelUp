@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+
 import {
+  BoldText,
+  Stick,
+  StickedCont,
+  Text,
+  SmallText,
   InfoText,
   LeaderBoardContainer,
-  Reick,
-  Stick,
-  TextReick,
-} from "./CashGames";
-import { InfoCont } from "./SpringSeries";
+} from "./WidelyUsed";
+
 import ticket from "../assets/poker-item-1-ticket-icon.png";
 import tickets from "../assets/poker-item-2-ticket-icon.png";
 
@@ -15,22 +18,22 @@ export default function AprilsTournament() {
   return (
     <MyContainer>
       <Stick></Stick>
-      <Reick>
-        <TextReick>მოიგე საგზური 30 აპრილის ფინალურ ტურნირებზე</TextReick>
-      </Reick>
+      <StickedCont>
+        <BoldText>მოიგე საგზური 30 აპრილის ფინალურ ტურნირებზე</BoldText>
+      </StickedCont>
 
       <LeaderBoardContainer>
         <GridContainer>
           <Rollers>
             <TextContainer>
-              <BoldText>“Cashgame Highrollers” -</BoldText>
-              <Text>1 საგზური</Text>
+              <Text>“Cashgame Highrollers” -</Text>
+              <SmallText>1 საგზური</SmallText>
             </TextContainer>
             <Ticket1 src={ticket} alt="" />
           </Rollers>
           <Malta>
             <TextContainer>
-              <BoldText>„The Festival in Malta, GTD“</BoldText>
+              <Text>„The Festival in Malta, GTD“</Text>
               <Text>A კატეგორიის 1 საგზური</Text>
               <Text>B კატეგორიის 1 საგზური</Text>
               <Text>
@@ -42,25 +45,25 @@ export default function AprilsTournament() {
           </Malta>
           <Grinders>
             <TextContainer>
-              <BoldText>„Cashgame Grinders”</BoldText>
+              <Text>„Cashgame Grinders”</Text>
               <Text>1 საგზური</Text>
             </TextContainer>
             <Ticket1 src={ticket} alt="" />
           </Grinders>
           <Rings>
             <TextContainer>
-              <BoldText>„The Lord of the Rings“</BoldText>
-              <Text>C კატეგორიის 1 საგზური</Text>
-              <Text>
+              <Text>„The Lord of the Rings“</Text>
+              <SmallText>C კატეგორიის 1 საგზური</SmallText>
+              <SmallText>
                 ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾
                 ბაი-ინის გადახდით.
-              </Text>
+              </SmallText>
             </TextContainer>
             <Ticket1 src={ticket} alt="" />
           </Rings>
           <Sharks>
             <TextContainer>
-              <BoldText>„Tournament Sharks“ -</BoldText>
+              <Text>„Tournament Sharks“ -</Text>
               <Text>1 საგზური</Text>
             </TextContainer>
             <Ticket1 src={ticket} alt="" />
@@ -159,21 +162,7 @@ const Sharks = styled.div`
   grid-area: sharks;
   padding: 20px;
 `;
-const BoldText = styled.p`
-  font-size: 16px;
-  color: white;
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
-`;
-const Text = styled.p`
-  font-size: 14px;
-  color: white;
-  opacity: 80%;
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
+
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;

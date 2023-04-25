@@ -1,15 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, LeaderBoardContainer, Reick, Stick } from "./CashGames";
+
+import {
+  Stick,
+  Container,
+  StickedCont,
+  LeaderBoardContainer,
+} from "./WidelyUsed";
 import { Leaderboard, Numb } from "./LeaderBoard";
 
 export default function MistickKey() {
   return (
     <Container>
       <Stick></Stick>
-      <Reick>
+      <StickedCont>
         <KeyText>მისტიური გასაღები </KeyText>
-      </Reick>
+      </StickedCont>
 
       <LeaderBoardContainer>
         <TextContainer>

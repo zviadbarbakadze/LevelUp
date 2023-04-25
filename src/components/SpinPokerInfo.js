@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Stick } from "./WidelyUsed";
 export default function SpinPokerInfo() {
   return (
     <Container>
@@ -26,16 +27,7 @@ const Container = styled.div`
   margin-left: 3%;
   border-radius: 10px;
 `;
-const Stick = styled.div`
-  background-color: #ef5a21;
-  width: 30%;
-  height: 4px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  position: absolute;
-  top: 0;
-  left: 35%;
-`;
+
 const BoldText = styled.p`
   color: white;
   font-size: 16px;

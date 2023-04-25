@@ -1,21 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import arrow from "../assets/Vector.svg";
+import { BoldText, Text, Image } from "./WidelyUsed";
 
 export default function TermsConditions() {
   return (
     <Container>
-      <Text>წესები და პირობები</Text>
+      <BoldText>წესები და პირობები</BoldText>
       <Select>
-        <SelectText>როდის იწყება და რა ფორმატით გაიმართება აქცია</SelectText>
+        <Text>როდის იწყება და რა ფორმატით გაიმართება აქცია</Text>
         <Image src={arrow} alt="" />
       </Select>
       <Select>
-        <SelectText>როგორ მივიღო აქციაში მონაწილეობა</SelectText>
+        <Text>როგორ მივიღო აქციაში მონაწილეობა</Text>
         <Image src={arrow} alt="" />
       </Select>
       <Select>
-        <SelectText>სხვადასხვა</SelectText>
+        <Text>სხვადასხვა</Text>
         <Image src={arrow} alt="" />
       </Select>
     </Container>
@@ -25,11 +26,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const Text = styled.p`
-  font-size: 18px;
-  color: white;
-  margin-bottom: 30px;
-`;
+
 const Select = styled.div`
   background-color: #25292b;
   font-size: 15px;
@@ -42,9 +39,4 @@ const Select = styled.div`
   justify-content: space-between;
   margin-bottom: 10px;
   cursor: pointer;
-`;
-const SelectText = styled.p``;
-const Image = styled.img`
-  width: 20px;
-  color: white;
 `;

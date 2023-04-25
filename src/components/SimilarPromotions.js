@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import hundreedImage from "../assets/Rounded.png";
 import MensImage from "../assets/mens.png";
+import { MediumText } from "./WidelyUsed";
 
 export default function SimilarPromotions() {
   return (
     <Container>
-      <Text>მსგავსი აქციები</Text>
+      <MediumText>მსგავსი აქციები</MediumText>
       <PromoContainer>
         <ImageContainer>
           <ImageBoldText>Get 300% Cashback</ImageBoldText>
@@ -48,11 +49,7 @@ const Container = styled.div`
   margin-top: 30px;
   width: 100%;
 `;
-const Text = styled.p`
-  color: white;
-  font-size: 18px;
-  margin-bottom: 30px;
-`;
+
 const PromoContainer = styled.div`
   display: grid;
   grid-template-columns: auto auto auto auto;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Stick } from "./CashGames";
+
+import { Stick, StickedCont } from "./WidelyUsed";
 import ticket from "../assets/final-item-ticket-icon.png";
 import eventIcon from "../assets/final-item-event-icon.png";
 import hotelIcon from "../assets/final-item-hotel-icon.png";
@@ -10,8 +11,10 @@ import { Icon } from "./LeaderBoard";
 export default function CategoryCont() {
   return (
     <CategoryContainer>
-      <Stick />
-      <Text>A კატეგორიის საგზურში შედის</Text>
+      <StickedCont>
+        <Stick />
+        <Text>1₾ რეიკი = 1 ქულას </Text>
+      </StickedCont>
       <CategryItem>
         <Icon src={ticket} alt="" />
         <ItemText>ორმხრივი ავიაბილეთი</ItemText>
