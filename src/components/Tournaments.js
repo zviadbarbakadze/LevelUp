@@ -49,6 +49,8 @@ const EventContainer = styled.div`
   padding-top: 10px;
   padding-bottom: 10px;
   height: 280px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   @media (max-width: 768px) {
     padding-bottom: 0;
   }
@@ -124,5 +126,8 @@ const ButtonTextcont = styled.div`
   @media (max-width: 768px) {
     background-color: #2c3234;
     margin-bottom: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 10px;
   }
 `;

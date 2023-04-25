@@ -22,6 +22,7 @@ export default function Nav() {
     </Container>
   );
 }
+
 const Container = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
@@ -40,8 +41,8 @@ const MyNavLink = styled(NavLink)`
   font-weight: bold;
   text-decoration: none;
   @media (max-width: 500px) {
-    font-size: 16px;
-    height: 60px;
+    font-size: 12px;
+    height: 80px;
   }
 
   &.active {
@@ -49,8 +50,8 @@ const MyNavLink = styled(NavLink)`
     height: 95px;
     border-radius: 10px;
     @media (max-width: 500px) {
-      font-size: 16px;
-      height: 65px;
+      font-size: 12px;
+      height: 85px;
     }
   }
 `;

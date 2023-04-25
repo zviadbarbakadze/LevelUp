@@ -26,6 +26,7 @@ export const BoldText = styled.p`
   font-weight: bold;
   color: white;
   margin-bottom: 20px;
+  text-align: center;
   @media (max-width: 768px) {
     font-size: 16px;
   }
