@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/LevelUp/static/css/main.9947194d.css",
+    "main.js": "/LevelUp/static/js/main.496ff651.js",
+    "static/media/final-info-img.jpg": "/LevelUp/static/media/final-info-img.29fe0446182a7ae99e4c.jpg",
+    "static/media/banner.jpg": "/LevelUp/static/media/banner.0161f0cbc2a080e249b4.jpg",
+    "static/media/mens.png": "/LevelUp/static/media/mens.906a0ae43314ba85e4bf.png",
+    "static/media/Rounded.png": "/LevelUp/static/media/Rounded.7a8b2cf49cbc58ea30bb.png",
+    "static/media/main-bg.png": "/LevelUp/static/media/main-bg.20f236ba51b29e2a3ec0.png",
+    "static/media/main-bg-sm.png": "/LevelUp/static/media/main-bg-sm.e18db0b56096864f70c3.png",
+    "static/media/promo-left-img.png": "/LevelUp/static/media/promo-left-img.066d1bd0efe100030e64.png",
+    "static/media/promo-right-img.png": "/LevelUp/static/media/promo-right-img.b1376ba44e821f0f6829.png",
+    "static/media/tournament-bg.png": "/LevelUp/static/media/tournament-bg.da05307450e20d556c04.png",
+    "index.html": "/LevelUp/index.html",
+    "static/media/Vector.svg": "/LevelUp/static/media/Vector.8ca095b1f4e159db31e9cc832e63c830.svg",
+    "main.9947194d.css.map": "/LevelUp/static/css/main.9947194d.css.map",
+    "main.496ff651.js.map": "/LevelUp/static/js/main.496ff651.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9947194d.css",
+    "static/js/main.496ff651.js"
+  ]
+}
